@@ -6,7 +6,7 @@ export interface IngredientsProps {
 
 export const Ingredients: React.FC<IngredientsProps> = ({ ingredients }) => {
   return (
-    <div className="w-[35%] pl-1">
+    <div className="sm:w-[35%] pl-1">
       <div className="text-[1.25rem] uppercase tracking-wider font-medium mb-2">
         Ingredients
       </div>

@@ -18,7 +18,7 @@ export const Menu = () => {
           <div></div>
         ) : (
           data.map((recipe: any, index: number) => (
-            <div className="px-[10rem] py-1" key={recipe.uuid}>
+            <div className="px-[2rem] sm:px-[10rem] py-1" key={recipe.uuid}>
               <MenuItem
                 title={recipe.title}
                 images={recipe.images}

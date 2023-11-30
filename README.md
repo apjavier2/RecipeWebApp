@@ -1,4 +1,4 @@
-## Menu App
+## Recipe Web App
 
 First, run the development server:
 

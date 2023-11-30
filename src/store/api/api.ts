@@ -16,3 +16,13 @@ export const getRecipes = async () => {
     throw error;
   }
 };
+
+export const getSpecials = async () => {
+  try {
+    const response = await api.get("/specials");
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};

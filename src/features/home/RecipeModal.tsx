@@ -23,7 +23,7 @@ export const RecipeModal: React.FC<RecipeModal> = ({
   };
   return (
     <Modal isOpen={isOpen} style={modalStyles}>
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-end h-[20rem]">
         <button onClick={onClose} className="font-bold text-[1.25rem]">
           X
         </button>
@@ -36,7 +36,8 @@ export const RecipeModal: React.FC<RecipeModal> = ({
           servings={selectedRecipe.servings}
           cookTime={selectedRecipe.cookTime}
         />
-        <div className="w-full flex flex-row mt-4">
+
+        <div className="w-full flex flex-col sm:flex-row mt-4 gap-4">
           <Ingredients ingredients={selectedRecipe.ingredients} />
           <Directions directions={selectedRecipe.directions} />
         </div>
