@@ -21,8 +21,14 @@ export const RecipeModal: React.FC<RecipeModal> = ({
       margin: "auto",
     },
   };
+
   return (
-    <Modal isOpen={isOpen} style={modalStyles}>
+    <Modal
+      isOpen={isOpen}
+      style={modalStyles}
+      onRequestClose={onClose}
+      appElement={document.getElementById("__next") ?? undefined}
+    >
       <div className="flex flex-col items-end h-[20rem]">
         <button onClick={onClose} className="font-bold text-[1.25rem]">
           X
