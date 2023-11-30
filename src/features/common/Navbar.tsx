@@ -53,9 +53,13 @@ export const Navbar: React.FC = (props) => {
               className="uppercase p-4 border-b text-white"
               onClick={() => {
                 if (path.includes("home") || path.includes("recipes")) {
-                  router.push("/");
+                  router.push("/").then(() => {
+                    navHandler();
+                  });
                 } else {
-                  router.push(path.split(" ")[0]);
+                  router.push(path.split(" ")[0]).then(() => {
+                    navHandler();
+                  });
                 }
               }}
             >
